@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+	ViewData["Title"] = "Home page";
+}
+
+<div class="container">
+	<div class="row justify-content-center">
+		<h2 class="text-center mb-4">My Calendar</h2>
+		<div class="col-lg-6 calendar-container">
+			<div id="calendar"></div>
+		</div>
+		<div class="col-lg-4 event-list-container">
+			<h3 class="text-center mb-4" id="event-list-title">Events for November</h3>
+			<div id="event-list">
+				<p>Select a date to view events.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="modal-container">
+	@{
+		await Html.RenderPartialAsync("_Modal");
+		await Html.RenderPartialAsync("EventEdit", new EventEdit());
+	}
+</div>
+
+@section Scripts {
+	<script src="~/js/Pages/Index.js"></script>
+}
