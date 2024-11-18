@@ -30,8 +30,8 @@ To get started with the project locally, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/Rhurac1986/waldeinsamkeit.git
-    cd waldeinsamkeit
+    git clone https://github.com/Rhurac1986/cvp_waldeinsamkeit.git
+    cd cvp_waldeinsamkeit
     ```
 
 2. Install the necessary dependencies:
